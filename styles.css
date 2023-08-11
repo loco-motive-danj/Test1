@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+nav{
+    border: solid .5rem;
+    border-color: rgb(118, 199, 222);
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    border-top: 0rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top: 0;
+    z-index: 100;
+}
+
+#Daniel{
+    /* top: 30px;
+    right: 15%; */
+    position: relative;
+    display: flex;
+    justify-content:left;
+    align-items: left;
+    font-size: xx-large;
+    width: 50%;
+    height: 50%;
+    top: 40px;
+    font-family: fantasy;
+    color:rgb(203, 240, 240);
+}
+
+#nav-links{
+    position: relative;
+    top: 40px;
+    /* left: 15%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items:left;
+    font-style: italic;
+    font-size: xx-large;
+    color:rgb(203, 240, 240);
+}
+
+.nav-items-space{
+    margin-right: 20px;
+}
+
+#splash{
+    width: 100%;
+    background-image: url(Yeesh.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+}  
+
+
+#myinfo{
+    height: 100px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 300px;
+    padding: 20px;
+}
+
+
+#myinfo > h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight:700;
+    color:bisque;
+}
+#myinfo  h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(203, 240, 240);
+    font-size: medium;
+}
+
+.Quote{
+    left: 70px;
+    top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(203, 240, 240);
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 5px;
+    width: 50%;
+}
+
+/* The About Page  */
+
+.About-Me{
+    margin:20px;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(122, 107, 238);
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 50px;
+    background-color: aqua;
+}
+
+.About-Me h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    border: 1rem solid red;
+    border-radius:50%;
+    width: 30%;
+    left: 100px;
+}
+
+#dj{
+    margin: 50px;
+    width: 50%;
+    height: 300px;
+    top: 60px;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-image: url(djsetimg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px;
+}
+
+#pianoimg{
+    width: 50%;
+    height: 300px;
+    top: 60px;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-image: url(pianoimg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px;
+    margin:50px;
+}
+
+.About-Me p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin:20px;
+}
+
+/* Portfolio Section */
+
+.boxback{
+    top: 5px;
+    bottom: 5px; 
+    margin: 10px;
+    background-color: rgb(255, 214, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400;
+}
+
+ #projects{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly; 
+    align-items: center;
+    background-color: green;
+    padding: 10px;
+    width: 80%;
+    height: 350;
+    /* margin: 5px; */
+}
+
+.project-items{
+    top: 10px;
+    bottom: 10px;
+    margin: 20px;
+    height: 800px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: solid 1px;
+    border-color: black;
+    background-color: rgb(193, 235, 165);
+    padding: 20px;
+}
+
+@media screen and (min-width: 500px){
+        .project-items{
+            height: 600px;
+
+        }
+} 
+    
+/* Project Images Section */
+
+#proj-img1, #proj-img2, #proj-img3{
+    top: 50px;
+    height: 300px;
+    width: 50px;
+    border-radius: 30rem;
+}
+
+#proj-img1{
+   
+    background-image: url(HelloWorldImg.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#proj-img2{
+    background-image: url(BinaryTreeImg.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#proj-img3{
+    background-image: url(GuyCodingHoodieIMG.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 700px){
+    #proj-img1, #proj-img2, #proj-img3{
+        width: 300px;
+        border-radius:10px;
+    }
+}
+
